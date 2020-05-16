@@ -1,0 +1,78 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    display: grid;
+    width: 100vw;
+    grid-template-columns: repeat(5,55px);
+    grid-template-rows: repeat(4, 50px);
+    gap: 1em;
+    grid-template-areas: "title title title title title"
+                        "randomBox randomBox randomBox randomBox randomBox"
+                        "box1 box2 box3 box4 box5"
+                         "start start start btn btn";
+    justify-content: center;
+    margin: 20% auto;
+    
+}
+
+#randomBox{
+    grid-area: randomBox;
+    background-color: blue;
+    font-size: larger;
+    align-self: center;
+
+}
+h1{
+    grid-area: title;
+    text-align: center;
+    font-size: 33.5px;
+    background-color: red;
+    height: fit-content;
+    border: 3px solid black;
+    
+}
+.box, .boxx{
+    border: 3px solid black;
+    padding: 1em;
+}
+
+.box1{
+    grid-area: box1;
+}
+
+.box2{
+    grid-area: box2;
+}
+.box3{
+    grid-area: box3;
+}
+.box4{
+    grid-area: box4;
+}
+.box5{
+    grid-area: box5;
+}
+
+#start{
+    grid-area: start;
+    background-color: yellow;
+}
+#start:hover{
+    border: 5px solid black;
+}
+
+#clearAll{
+    grid-area: btn;
+}
+
+#clearAll:hover{
+    color: #e00f5a;
+    border: 5px solid #e00f5a;
+}
+
+button{
+    border: 3px solid black;
+    outline: none;
+    font-size: larger;
+}
+
